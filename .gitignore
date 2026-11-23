@@ -1,0 +1,9 @@
+# build output
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# user data (sessions may contain saved, encrypted passwords)
+sessions/
+rdpman.ini
