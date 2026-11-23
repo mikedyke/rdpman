@@ -6,6 +6,8 @@ It is a single native Win32 executable (about 320 KB) with no .NET or other runt
 no installer. Connections are opened with the Remote Desktop client that ships with Windows
 (`mstsc.exe`), so everything `mstsc` supports keeps working.
 
+![Session list with groups; one session is flagged because its monitor setup changed](docs/sessions.png)
+
 ## Features
 
 - **Session list** with search, optional groups, and connect / new / edit / duplicate / delete.
@@ -43,6 +45,25 @@ Double-click a session or press Enter to connect.
 | Ctrl+F | Search; Esc clears it |
 | Ctrl+I / Ctrl+E | Import / export |
 | F5 | Reload the sessions folder |
+
+### Connection settings
+
+Editing a session opens a dialog with one tab per area. **General** holds the name, group,
+computer, user and optional password:
+
+![General tab of the session editor](docs/edit-general.png)
+
+**Display** selects window or full screen and, for full screen, which monitors to use:
+
+![Display tab with the monitor picker](docs/edit-display.png)
+
+**Local resources** controls clipboard, printers, drives, audio and other redirection:
+
+![Local resources tab](docs/edit-local-resources.png)
+
+**All settings** lists every known RDP property, set or not, and accepts custom lines:
+
+![All settings tab](docs/edit-all-settings.png)
 
 ### Where data is stored
 

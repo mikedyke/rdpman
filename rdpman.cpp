@@ -1101,7 +1101,7 @@ static LRESULT CALLBACK MainProc(HWND h, UINT m, WPARAM w, LPARAM l) {
         case IDM_MSTSCL: RunMstsc(L"/l"); break;
         case IDM_MSTSC: RunMstsc(L""); break;
         case IDM_EXIT: SendMessageW(h, WM_CLOSE, 0, 0); break;
-        case IDM_ABOUT: Msg(h, L"RDP Manager 1.0\n\nPortable manager for Remote Desktop sessions.\nSessions are ordinary .rdp files stored in:\n" + g_dataDir +
+        case IDM_ABOUT: Msg(h, L"RDP Manager 0.1\n\nPortable manager for Remote Desktop sessions.\nSessions are ordinary .rdp files stored in:\n" + g_dataDir +
             L"\n\nConnections are opened with the Windows Remote Desktop client (mstsc.exe).\n\nCommand line:  rdpman.exe \"session name\"  connects directly."); break;
         }
         return 0; }
